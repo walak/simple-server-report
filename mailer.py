@@ -27,7 +27,7 @@ def create_message(frm, to, subject):
 
 
 def create_mime_body(content):
-    text_attachment = MIMEText(content)
+    text_attachment = MIMEText(content, _charset='utf-8')
     return text_attachment
 
 
