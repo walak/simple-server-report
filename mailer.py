@@ -32,7 +32,7 @@ def create_mime_body(content):
 
 
 def create_file_attachment(attachment_content, filename='attachment.txt', mimetype='text/html'):
-    file_attachment = MIMEApplication(str.encode(attachment_content), mimetype, Name=filename)
+    file_attachment = MIMEApplication(str.encode(attachment_content, "UTF-8"), mimetype, Name=filename)
     file_attachment['Content-Disposition'] = 'attachment; filename="%s"' % filename
     return file_attachment
 
