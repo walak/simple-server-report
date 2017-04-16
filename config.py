@@ -1,3 +1,4 @@
+# -*- coding=UTF-8 -*-
 def load_properties(filename):
     r_map = {}
     with open(filename) as file:

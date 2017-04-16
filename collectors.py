@@ -1,3 +1,4 @@
+# -*- coding=UTF-8 -*-
 from datetime import timedelta
 from http.client import HTTPConnection, HTTPSConnection
 
